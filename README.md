@@ -20,7 +20,7 @@ $ composer require kostikpenzin/alfabank-api-acquiring
 include 'vendor/autoload.php';
 
 $client = new \kostikpenzin\AlfabankApiAcquiring\Client([
-    'username' => "name",
+    'userName' => "name",
     'password' => "password"
 ]);
 

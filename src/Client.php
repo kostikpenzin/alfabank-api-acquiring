@@ -30,28 +30,26 @@ use GuzzleHttp\Command\Guzzle\Description;
  */
 class Client extends GuzzleClient
 {
-/**
- * Constructs a new instance of the class.
- *
- * @param array $config An optional array of configuration options.
- * @throws Some_Exception_Class A description of the exception that can be thrown.
- * @return void
- */
-public function __construct(array $config = [])
-{
-    // Call the parent class constructor with the necessary arguments
-    parent::__construct(
-        new HttpClient(), // Instantiate a new HttpClient object
-        new Description(include realpath(__DIR__ . '/description.php')), // Instantiate a new Description object with the included description.php file
-        null, // Set a null value for the third argument
-        null, // Set a null value for the fourth argument
-        null, // Set a null value for the fifth argument
-        $config // Pass the $config array to the parent class constructor
-    );
+    /**
+     * Constructs a new instance of the class.
+     *
+     * @param array $config An optional array of configuration options.
+     * @throws Some_Exception_Class A description of the exception that can be thrown.
+     * @return void
+     */
+    public function __construct(array $config = [])
+    {
+        parent::__construct(
+            new HttpClient(),
+            new Description(include realpath(__DIR__ . '/description.php')),
+            null,
+            null,
+            null,
+            $config
+        );
 
-    // Set default values based on the $config array
-    $this->setDefaults($config);
-}
+        $this->setDefaults($config);
+    }
 
 /**
  * Sets the default values for the configuration.
@@ -70,11 +68,11 @@ private function setDefaults(array $config)
         // If 'token' key exists, set the value in defaults array
         $defaults['token'] = $config['token'];
     } else {
-        // If 'token' key does not exist, check if 'username' and 'password' keys exist
-        if (!isset($config['username'])) {
-            // If 'username' key does not exist, throw an exception
+        // If 'token' key does not exist, check if 'userName' and 'password' keys exist
+        if (!isset($config['userName'])) {
+            // If 'userName' key does not exist, throw an exception
             throw new \InvalidArgumentException(
-                'You must provide a username.'
+                'You must provide a userName.'
             );
         }
         if (!isset($config['password'])) {
@@ -84,8 +82,8 @@ private function setDefaults(array $config)
             );
         }
 
-        // Set the values of 'username' and 'password' keys in defaults array
-        $defaults['username'] = $config['username'];
+        // Set the values of 'userName' and 'password' keys in defaults array
+        $defaults['userName'] = $config['userName'];
         $defaults['password'] = $config['password'];
     }
 
