@@ -1,0 +1,23 @@
+{
+  "name": "kostikpenzin/alfabank-api-acquiring",
+  "description": "Api client for Alfabank acquiring",
+  "keywords": ["alfabank", "acquiring"],
+  "homepage": "https://github.com/kostikpenzin/alfabank-api-acquiring",
+  "authors": [
+    {
+      "name": "Penzin Konstantin",
+      "email": "penzin85@gmail.com"
+    }
+  ],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "guzzlehttp/guzzle-services": "^1"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "kostikpenzin\\AlfabankApiAcquiring\\": "src/"
+    }
+  }
+}
