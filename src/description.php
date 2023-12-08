@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => 'https://alfa.rbsuat.com/',
+    'baseUrl' => 'https://alfa.rbsuat.com',
     'operations' => [
         'register' => [
             'httpMethod' => 'POST',
