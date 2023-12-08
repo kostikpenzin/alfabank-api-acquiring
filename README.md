@@ -1,10 +1,10 @@
 # Api client for Alfabank acquiring
 
-[![Latest Stable Version](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiringrname/v/stable)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiringrname)
-[![Total Downloads](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiringrname/downloads)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiringrname)
-[![Latest Unstable Version](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiringrname/v/unstable)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiringrname)
-[![License](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiringrname/license)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiringrname)
-[![Monthly Downloads](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiringrname/d/monthly)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiringrname)
+[![Latest Stable Version](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/v/stable)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
+[![Total Downloads](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/downloads)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
+[![Latest Unstable Version](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/v/unstable)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
+[![License](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/license)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
+[![Monthly Downloads](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/d/monthly)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
 
 Api client for Alfabank acquiring
 
