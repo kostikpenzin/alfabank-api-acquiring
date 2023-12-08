@@ -6,7 +6,8 @@
 [![License](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/license)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
 [![Monthly Downloads](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/d/monthly)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
 
-Api client for Alfabank acquiring
+
+API connection with the payment page on the bank's side. 
 
 ## Installation
 
