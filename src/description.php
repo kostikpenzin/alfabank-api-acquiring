@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'baseUrl' => 'https://web.rbsuat.com',
+    'baseUrl' => 'https://alfa.rbsuat.com/payment',
     'operations' => [
         'register' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/register.do',
+            'uri' => '/rest/register.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -102,7 +102,7 @@ return [
         ],
         'registerPreAuth' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/registerPreAuth.do',
+            'uri' => '/rest/registerPreAuth.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -199,7 +199,7 @@ return [
         ],
         'deposit' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/deposit.do',
+            'uri' => '/rest/deposit.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -231,7 +231,7 @@ return [
         ],
         'getOrderStatus' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/getOrderStatus.do',
+            'uri' => '/rest/getOrderStatus.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -263,7 +263,7 @@ return [
         ],
         'getOrderStatusExtended' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/getOrderStatusExtended.do',
+            'uri' => '/rest/getOrderStatusExtended.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -300,7 +300,7 @@ return [
         ],
         'reverse' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/reverse.do',
+            'uri' => '/rest/reverse.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -332,7 +332,7 @@ return [
         ],
         'refund' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/refund.do',
+            'uri' => '/rest/refund.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -364,7 +364,7 @@ return [
         ],
         'verifyEnrollment' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/verifyEnrollment.do',
+            'uri' => '/rest/verifyEnrollment.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -391,7 +391,7 @@ return [
         ],
         'addParams' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/addParams.do',
+            'uri' => '/rest/addParams.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -428,7 +428,7 @@ return [
         ],
         'getLastOrdersForMerchants' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/getLastOrdersForMerchants.do',
+            'uri' => '/rest/getLastOrdersForMerchants.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -490,7 +490,7 @@ return [
         ],
         'paymentotherway' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/paymentotherway.do',
+            'uri' => '/rest/paymentotherway.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -527,7 +527,7 @@ return [
         ],
         'paymentOrderBinding' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/paymentOrderBinding.do',
+            'uri' => '/rest/paymentOrderBinding.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -579,7 +579,7 @@ return [
         ],
         'unBindCard' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/unBindCard.do',
+            'uri' => '/rest/unBindCard.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -606,7 +606,7 @@ return [
         ],
         'bindCard' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/bindCard.do',
+            'uri' => '/rest/bindCard.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -633,7 +633,7 @@ return [
         ],
         'extendBinding' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/extendBinding.do',
+            'uri' => '/rest/extendBinding.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -670,7 +670,7 @@ return [
         ],
         'getBindings' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/getBindings.do',
+            'uri' => '/rest/getBindings.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -697,7 +697,7 @@ return [
         ],
         'getBindingsByCardOrId' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/getBindingsByCardOrId.do',
+            'uri' => '/rest/getBindingsByCardOrId.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'userName' => [
@@ -734,7 +734,7 @@ return [
         ],
         'payment' => [
             'httpMethod' => 'POST',
-            'uri' => '/ab/rest/payment.do',
+            'uri' => '/rest/payment.do',
             'responseModel' => 'Result',
             'parameters' => [
                 'merchant' => [
