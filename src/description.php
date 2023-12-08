@@ -8,7 +8,7 @@ return [
             'uri' => '/ab/rest/register.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => false,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -105,7 +105,7 @@ return [
             'uri' => '/ab/rest/registerPreAuth.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -202,7 +202,7 @@ return [
             'uri' => '/ab/rest/deposit.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -234,7 +234,7 @@ return [
             'uri' => '/ab/rest/getOrderStatus.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => false,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -266,7 +266,7 @@ return [
             'uri' => '/ab/rest/getOrderStatusExtended.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -303,7 +303,7 @@ return [
             'uri' => '/ab/rest/reverse.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -335,7 +335,7 @@ return [
             'uri' => '/ab/rest/refund.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -367,7 +367,7 @@ return [
             'uri' => '/ab/rest/verifyEnrollment.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -394,7 +394,7 @@ return [
             'uri' => '/ab/rest/addParams.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -431,7 +431,7 @@ return [
             'uri' => '/ab/rest/getLastOrdersForMerchants.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -493,7 +493,7 @@ return [
             'uri' => '/ab/rest/paymentotherway.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -530,7 +530,7 @@ return [
             'uri' => '/ab/rest/paymentOrderBinding.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -582,7 +582,7 @@ return [
             'uri' => '/ab/rest/unBindCard.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -609,7 +609,7 @@ return [
             'uri' => '/ab/rest/bindCard.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -636,7 +636,7 @@ return [
             'uri' => '/ab/rest/extendBinding.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -673,7 +673,7 @@ return [
             'uri' => '/ab/rest/getBindings.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',
@@ -700,7 +700,7 @@ return [
             'uri' => '/ab/rest/getBindingsByCardOrId.do',
             'responseModel' => 'Result',
             'parameters' => [
-                'userName' => [
+                'username' => [
                     'required' => true,
                     'type' => 'string',
                     'location' => 'formParam',

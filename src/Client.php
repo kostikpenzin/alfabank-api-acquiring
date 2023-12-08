@@ -70,11 +70,11 @@ private function setDefaults(array $config)
         // If 'token' key exists, set the value in defaults array
         $defaults['token'] = $config['token'];
     } else {
-        // If 'token' key does not exist, check if 'userName' and 'password' keys exist
-        if (!isset($config['userName'])) {
-            // If 'userName' key does not exist, throw an exception
+        // If 'token' key does not exist, check if 'username' and 'password' keys exist
+        if (!isset($config['username'])) {
+            // If 'username' key does not exist, throw an exception
             throw new \InvalidArgumentException(
-                'You must provide a userName.'
+                'You must provide a username.'
             );
         }
         if (!isset($config['password'])) {
@@ -84,8 +84,8 @@ private function setDefaults(array $config)
             );
         }
 
-        // Set the values of 'userName' and 'password' keys in defaults array
-        $defaults['userName'] = $config['userName'];
+        // Set the values of 'username' and 'password' keys in defaults array
+        $defaults['username'] = $config['username'];
         $defaults['password'] = $config['password'];
     }
 
