@@ -6,8 +6,7 @@
 [![License](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/license)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
 [![Monthly Downloads](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/d/monthly)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
 
-
-API connection with the payment page on the bank's side. 
+API connection with the payment page on the bank's side.
 
 ## Installation
 
@@ -23,6 +22,7 @@ $ composer require kostikpenzin/alfabank-api-acquiring
 include 'vendor/autoload.php';
 
 $client = new \kostikpenzin\AlfabankApiAcquiring\Client([
+    'baseUrl' => 'https://alfa.rbsuat.com',
     'token' => "token", // or token
     'userName' => "name", // or userName and password
     'password' => "password"

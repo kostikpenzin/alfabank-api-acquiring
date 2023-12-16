@@ -1,7 +1,10 @@
 {
   "name": "kostikpenzin/alfabank-api-acquiring",
   "description": "Api client for Alfabank acquiring",
-  "keywords": ["alfabank", "acquiring"],
+  "keywords": [
+    "alfabank",
+    "acquiring"
+  ],
   "homepage": "https://github.com/kostikpenzin/alfabank-api-acquiring",
   "authors": [
     {

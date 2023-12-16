@@ -41,7 +41,7 @@ class Client extends GuzzleClient
     {
         parent::__construct(
             new HttpClient(),
-            new Description(include realpath(__DIR__ . '/description.php')),
+            new Description(include realpath(__DIR__ . '/Config.php')),
             null,
             null,
             null,
@@ -51,43 +51,49 @@ class Client extends GuzzleClient
         $this->setDefaults($config);
     }
 
-/**
- * Sets the default values for the configuration.
- *
- * @param array $config The configuration array.
- * @throws \InvalidArgumentException If the configuration is invalid.
- * @return void
- */
-private function setDefaults(array $config)
-{
-    // Initialize an empty array for defaults
-    $defaults = [];
+    /**
+     * Sets the default values for the configuration.
+     *
+     * @param array $config The configuration array.
+     * @throws \InvalidArgumentException If the configuration is invalid.
+     * @return void
+     */
+    private function setDefaults(array $config)
+    {
+        // Initialize an empty array for defaults
+        $defaults = [];
 
-    // Check if 'token' key exists in the config array
-    if (isset($config['token'])) {
-        // If 'token' key exists, set the value in defaults array
-        $defaults['token'] = $config['token'];
-    } else {
-        // If 'token' key does not exist, check if 'userName' and 'password' keys exist
-        if (!isset($config['userName'])) {
-            // If 'userName' key does not exist, throw an exception
-            throw new \InvalidArgumentException(
-                'You must provide a userName.'
-            );
-        }
-        if (!isset($config['password'])) {
-            // If 'password' key does not exist, throw an exception
-            throw new \InvalidArgumentException(
-                'You must provide a password.'
-            );
+        // Check if 'token' key exists in the config array
+        if (isset($config['token'])) {
+            // If 'token' key exists, set the value in defaults array
+            $defaults['token'] = $config['token'];
+        } else {
+            // If 'token' key does not exist, check if 'userName' and 'password' keys exist
+            if (!isset($config['userName'])) {
+                // If 'userName' key does not exist, throw an exception
+                throw new \InvalidArgumentException(
+                    'You must provide a userName.'
+                );
+            }
+            if (!isset($config['password'])) {
+                // If 'password' key does not exist, throw an exception
+                throw new \InvalidArgumentException(
+                    'You must provide a password.'
+                );
+            }
+
+            // Set the values of 'userName' and 'password' keys in defaults array
+            $defaults['userName'] = $config['userName'];
+            $defaults['password'] = $config['password'];
         }
 
-        // Set the values of 'userName' and 'password' keys in defaults array
-        $defaults['userName'] = $config['userName'];
-        $defaults['password'] = $config['password'];
+        if (isset($config['baseUrl'])) {
+            $defaults['baseUrl'] = $config['baseUrl'];
+        } else {
+            $defaults['baseUrl'] = 'https://alfa.rbsuat.com';
+        }
+
+        // Set the 'defaults' key in the configuration using setConfig method
+        $this->setConfig('defaults', $defaults);
     }
-
-    // Set the 'defaults' key in the configuration using setConfig method
-    $this->setConfig('defaults', $defaults);
-}
 }
