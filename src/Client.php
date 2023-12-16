@@ -6,6 +6,7 @@ use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Command\Guzzle\GuzzleClient;
 use GuzzleHttp\Command\Guzzle\Description;
 
+
 /**
  * Class Client
  * @package kostikpenzin\AlfabankApiAcquiring
@@ -30,6 +31,7 @@ use GuzzleHttp\Command\Guzzle\Description;
  */
 class Client extends GuzzleClient
 {
+
     /**
      * Constructs a new instance of the class.
      *
@@ -39,9 +41,21 @@ class Client extends GuzzleClient
      */
     public function __construct(array $config = [])
     {
+
+        if (isset($config['baseUrl'])) {
+            $config['baseUrl'] = $config['baseUrl'];
+        } else {
+            $config['baseUrl'] = 'https://alfa.rbsuat.com';
+        }
+
+        $description = new Description(
+            (new Setting())->init($config['baseUrl'])
+        );
+
         parent::__construct(
             new HttpClient(),
-            new Description(include realpath(__DIR__ . '/Config.php')),
+            $description,
+            //new Description($config),
             null,
             null,
             null,
@@ -87,11 +101,7 @@ class Client extends GuzzleClient
             $defaults['password'] = $config['password'];
         }
 
-        if (isset($config['baseUrl'])) {
-            $defaults['baseUrl'] = $config['baseUrl'];
-        } else {
-            $defaults['baseUrl'] = 'https://alfa.rbsuat.com';
-        }
+
 
         // Set the 'defaults' key in the configuration using setConfig method
         $this->setConfig('defaults', $defaults);
