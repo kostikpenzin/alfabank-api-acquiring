@@ -1,11 +1,3 @@
-# Api client for Alfabank acquiring
-
-[![Latest Stable Version](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/v/stable)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
-[![Total Downloads](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/downloads)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
-[![Latest Unstable Version](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/v/unstable)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
-[![License](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/license)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
-[![Monthly Downloads](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/d/monthly)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
-
 # PHP клиент для эквайринга Альфа-Банка
 
 [![Latest Stable Version](https://poser.pugx.org/kostikpenzin/alfabank-api-acquiring/v/stable)](https://packagist.org/packages/kostikpenzin/alfabank-api-acquiring)
